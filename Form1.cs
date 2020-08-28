@@ -169,7 +169,7 @@ namespace Exercícios_de_recursividade
             int y = int.Parse(text_y_exerc_8.Text);
             int resultado = 0;
             if (x == 0 || y == 0)
-                MessageBox.Show("Não pode haver valores 0", "ERRO ! ");
+                MessageBox.Show("Não pode haver valores 0", "ATENÇÃO ! ");
             else
             {
                 resultado = CalculoMdc(x, y);

@@ -167,12 +167,11 @@ namespace Exercícios_de_recursividade
         {
             int x = int.Parse(text_x_exerc_8.Text);
             int y = int.Parse(text_y_exerc_8.Text);
-            int resultado = 0;
             if (x == 0 || y == 0)
                 MessageBox.Show("Não pode haver valores 0", "ATENÇÃO ! ");
             else
             {
-                resultado = CalculoMdc(x, y);
+                int resultado = CalculoMdc(x, y);
                 MessageBox.Show("O MDC de " + x + " e " + y + " é " + resultado, "Exercicio 8");
             }
             

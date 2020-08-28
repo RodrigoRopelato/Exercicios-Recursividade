@@ -173,8 +173,9 @@ namespace Exercícios_de_recursividade
             else
             {
                 resultado = CalculoMdc(x, y);
+                MessageBox.Show("O MDC de " + x + " e " + y + " é " + resultado, "Exercicio 8");
             }
-            MessageBox.Show("O MDC de " + x + " e " + y + " é " + resultado, "Exercicio 8");
+            
         }
         //metodo para calcular mdc de x y
         private int CalculoMdc(int x, int y)

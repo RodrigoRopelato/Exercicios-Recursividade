@@ -1,0 +1,10 @@
+C:\Users\rodri\Desktop\Senai\Logica e programação\Projetos\Exercícios de recursividade\bin\Debug\Exercícios de recursividade.exe.config
+C:\Users\rodri\Desktop\Senai\Logica e programação\Projetos\Exercícios de recursividade\bin\Debug\Exercícios de recursividade.exe
+C:\Users\rodri\Desktop\Senai\Logica e programação\Projetos\Exercícios de recursividade\bin\Debug\Exercícios de recursividade.pdb
+C:\Users\rodri\Desktop\Senai\Logica e programação\Projetos\Exercícios de recursividade\obj\Debug\Exercícios de recursividade.csprojAssemblyReference.cache
+C:\Users\rodri\Desktop\Senai\Logica e programação\Projetos\Exercícios de recursividade\obj\Debug\Exercícios_de_recursividade.Form1.resources
+C:\Users\rodri\Desktop\Senai\Logica e programação\Projetos\Exercícios de recursividade\obj\Debug\Exercícios_de_recursividade.Properties.Resources.resources
+C:\Users\rodri\Desktop\Senai\Logica e programação\Projetos\Exercícios de recursividade\obj\Debug\Exercícios de recursividade.csproj.GenerateResource.cache
+C:\Users\rodri\Desktop\Senai\Logica e programação\Projetos\Exercícios de recursividade\obj\Debug\Exercícios de recursividade.csproj.CoreCompileInputs.cache
+C:\Users\rodri\Desktop\Senai\Logica e programação\Projetos\Exercícios de recursividade\obj\Debug\Exercícios de recursividade.exe
+C:\Users\rodri\Desktop\Senai\Logica e programação\Projetos\Exercícios de recursividade\obj\Debug\Exercícios de recursividade.pdb

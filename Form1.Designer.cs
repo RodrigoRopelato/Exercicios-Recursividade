@@ -161,7 +161,7 @@
             this.btn_exerc_1.TabIndex = 2;
             this.btn_exerc_1.Text = "Calcular Fatorial ";
             this.btn_exerc_1.UseVisualStyleBackColor = true;
-            this.btn_exerc_1.Click += new System.EventHandler(this.btn_exerc_1_Click);
+            this.btn_exerc_1.Click += new System.EventHandler(this.Btn_exerc_1_Click);
             // 
             // label1
             // 
@@ -200,7 +200,7 @@
             this.btn_fibonacci.TabIndex = 2;
             this.btn_fibonacci.Text = "Calcular Fibonacci";
             this.btn_fibonacci.UseVisualStyleBackColor = true;
-            this.btn_fibonacci.Click += new System.EventHandler(this.btn_fibonacci_Click);
+            this.btn_fibonacci.Click += new System.EventHandler(this.Btn_fibonacci_Click);
             // 
             // label2
             // 
@@ -239,7 +239,7 @@
             this.btn_exerc_3.TabIndex = 2;
             this.btn_exerc_3.Text = "Inverter Num.";
             this.btn_exerc_3.UseVisualStyleBackColor = true;
-            this.btn_exerc_3.Click += new System.EventHandler(this.btn_exerc_3_Click);
+            this.btn_exerc_3.Click += new System.EventHandler(this.Btn_exerc_3_Click);
             // 
             // label3
             // 
@@ -278,7 +278,7 @@
             this.btn_exerc_4.TabIndex = 2;
             this.btn_exerc_4.Text = "Somar vetor";
             this.btn_exerc_4.UseVisualStyleBackColor = true;
-            this.btn_exerc_4.Click += new System.EventHandler(this.btn_exerc_4_Click);
+            this.btn_exerc_4.Click += new System.EventHandler(this.Btn_exerc_4_Click);
             // 
             // label4
             // 
@@ -317,7 +317,7 @@
             this.btn_exerc_5.TabIndex = 2;
             this.btn_exerc_5.Text = "Somar ";
             this.btn_exerc_5.UseVisualStyleBackColor = true;
-            this.btn_exerc_5.Click += new System.EventHandler(this.btn_exerc_5_Click);
+            this.btn_exerc_5.Click += new System.EventHandler(this.Btn_exerc_5_Click);
             // 
             // label5
             // 
@@ -364,7 +364,7 @@
             this.btn_exerc_6.TabIndex = 2;
             this.btn_exerc_6.Text = "Calcular";
             this.btn_exerc_6.UseVisualStyleBackColor = true;
-            this.btn_exerc_6.Click += new System.EventHandler(this.btn_exerc_6_Click);
+            this.btn_exerc_6.Click += new System.EventHandler(this.Btn_exerc_6_Click);
             // 
             // label6
             // 
@@ -404,7 +404,7 @@
             this.btn_exerc_7.TabIndex = 3;
             this.btn_exerc_7.Text = "Inverter Vetor";
             this.btn_exerc_7.UseVisualStyleBackColor = true;
-            this.btn_exerc_7.Click += new System.EventHandler(this.btn_exerc_7_Click);
+            this.btn_exerc_7.Click += new System.EventHandler(this.Btn_exerc_7_Click);
             // 
             // btn_gerarVetor_7
             // 
@@ -414,7 +414,7 @@
             this.btn_gerarVetor_7.TabIndex = 2;
             this.btn_gerarVetor_7.Text = "Gerar Vetor ";
             this.btn_gerarVetor_7.UseVisualStyleBackColor = true;
-            this.btn_gerarVetor_7.Click += new System.EventHandler(this.btn_gerarVetor_7_Click);
+            this.btn_gerarVetor_7.Click += new System.EventHandler(this.Btn_gerarVetor_7_Click);
             // 
             // label7
             // 
@@ -482,7 +482,7 @@
             this.btn_exerc_8.TabIndex = 2;
             this.btn_exerc_8.Text = "Calcular Mdc ( x y )";
             this.btn_exerc_8.UseVisualStyleBackColor = true;
-            this.btn_exerc_8.Click += new System.EventHandler(this.btn_exerc_8_Click);
+            this.btn_exerc_8.Click += new System.EventHandler(this.Btn_exerc_8_Click);
             // 
             // label8
             // 
@@ -549,7 +549,7 @@
             this.btn_exerc_9.TabIndex = 2;
             this.btn_exerc_9.Text = "Contar repetições ";
             this.btn_exerc_9.UseVisualStyleBackColor = true;
-            this.btn_exerc_9.Click += new System.EventHandler(this.btn_exerc_9_Click);
+            this.btn_exerc_9.Click += new System.EventHandler(this.Btn_exerc_9_Click);
             // 
             // label13
             // 
@@ -616,7 +616,7 @@
             this.btn_exerc_10.TabIndex = 2;
             this.btn_exerc_10.Text = "Calcular";
             this.btn_exerc_10.UseVisualStyleBackColor = true;
-            this.btn_exerc_10.Click += new System.EventHandler(this.btn_exerc_10_Click);
+            this.btn_exerc_10.Click += new System.EventHandler(this.Btn_exerc_10_Click);
             // 
             // label16
             // 
@@ -675,7 +675,7 @@
             this.btn_exerc_11.TabIndex = 2;
             this.btn_exerc_11.Text = "Gerar Numeros";
             this.btn_exerc_11.UseVisualStyleBackColor = true;
-            this.btn_exerc_11.Click += new System.EventHandler(this.btn_exerc_11_Click);
+            this.btn_exerc_11.Click += new System.EventHandler(this.Btn_exerc_11_Click);
             // 
             // label17
             // 
@@ -734,7 +734,7 @@
             this.btn_exerc_12.TabIndex = 2;
             this.btn_exerc_12.Text = "Gerar Numeros";
             this.btn_exerc_12.UseVisualStyleBackColor = true;
-            this.btn_exerc_12.Click += new System.EventHandler(this.btn_exerc_12_Click);
+            this.btn_exerc_12.Click += new System.EventHandler(this.Btn_exerc_12_Click);
             // 
             // label20
             // 
@@ -793,7 +793,7 @@
             this.btn_exerc_13.TabIndex = 2;
             this.btn_exerc_13.Text = "Gerar Numeros";
             this.btn_exerc_13.UseVisualStyleBackColor = true;
-            this.btn_exerc_13.Click += new System.EventHandler(this.btn_exerc_13_Click);
+            this.btn_exerc_13.Click += new System.EventHandler(this.Btn_exerc_13_Click);
             // 
             // label25
             // 
@@ -852,7 +852,7 @@
             this.btn_exerc_14.TabIndex = 2;
             this.btn_exerc_14.Text = "Gerar Numeros";
             this.btn_exerc_14.UseVisualStyleBackColor = true;
-            this.btn_exerc_14.Click += new System.EventHandler(this.btn_exerc_14_Click);
+            this.btn_exerc_14.Click += new System.EventHandler(this.Btn_exerc_14_Click);
             // 
             // label28
             // 
@@ -891,7 +891,7 @@
             this.btn_exerc_15.TabIndex = 5;
             this.btn_exerc_15.Text = "Calcular Fatorial Duplo";
             this.btn_exerc_15.UseVisualStyleBackColor = true;
-            this.btn_exerc_15.Click += new System.EventHandler(this.btn_exerc_15_Click);
+            this.btn_exerc_15.Click += new System.EventHandler(this.Btn_exerc_15_Click);
             // 
             // label29
             // 
@@ -917,7 +917,7 @@
             this.btn_1.TabIndex = 3;
             this.btn_1.Text = "?";
             this.btn_1.UseVisualStyleBackColor = true;
-            this.btn_1.Click += new System.EventHandler(this.btn_1_Click);
+            this.btn_1.Click += new System.EventHandler(this.Btn_1_Click);
             // 
             // btn_2
             // 
@@ -927,7 +927,7 @@
             this.btn_2.TabIndex = 4;
             this.btn_2.Text = "?";
             this.btn_2.UseVisualStyleBackColor = true;
-            this.btn_2.Click += new System.EventHandler(this.btn_2_Click);
+            this.btn_2.Click += new System.EventHandler(this.Btn_2_Click);
             // 
             // btn_3
             // 
@@ -937,7 +937,7 @@
             this.btn_3.TabIndex = 5;
             this.btn_3.Text = "?";
             this.btn_3.UseVisualStyleBackColor = true;
-            this.btn_3.Click += new System.EventHandler(this.btn_3_Click);
+            this.btn_3.Click += new System.EventHandler(this.Btn_3_Click);
             // 
             // btn_4
             // 
@@ -947,7 +947,7 @@
             this.btn_4.TabIndex = 6;
             this.btn_4.Text = "?";
             this.btn_4.UseVisualStyleBackColor = true;
-            this.btn_4.Click += new System.EventHandler(this.btn_4_Click);
+            this.btn_4.Click += new System.EventHandler(this.Btn_4_Click);
             // 
             // btn_5
             // 
@@ -957,7 +957,7 @@
             this.btn_5.TabIndex = 7;
             this.btn_5.Text = "?";
             this.btn_5.UseVisualStyleBackColor = true;
-            this.btn_5.Click += new System.EventHandler(this.btn_5_Click);
+            this.btn_5.Click += new System.EventHandler(this.Btn_5_Click);
             // 
             // btn_6
             // 
@@ -967,7 +967,7 @@
             this.btn_6.TabIndex = 8;
             this.btn_6.Text = "?";
             this.btn_6.UseVisualStyleBackColor = true;
-            this.btn_6.Click += new System.EventHandler(this.btn_6_Click);
+            this.btn_6.Click += new System.EventHandler(this.Btn_6_Click);
             // 
             // btn_7
             // 
@@ -977,7 +977,7 @@
             this.btn_7.TabIndex = 4;
             this.btn_7.Text = "?";
             this.btn_7.UseVisualStyleBackColor = true;
-            this.btn_7.Click += new System.EventHandler(this.btn_7_Click);
+            this.btn_7.Click += new System.EventHandler(this.Btn_7_Click);
             // 
             // btn_8
             // 
@@ -987,7 +987,7 @@
             this.btn_8.TabIndex = 5;
             this.btn_8.Text = "?";
             this.btn_8.UseVisualStyleBackColor = true;
-            this.btn_8.Click += new System.EventHandler(this.btn_8_Click);
+            this.btn_8.Click += new System.EventHandler(this.Btn_8_Click);
             // 
             // btn_9
             // 
@@ -997,7 +997,7 @@
             this.btn_9.TabIndex = 6;
             this.btn_9.Text = "?";
             this.btn_9.UseVisualStyleBackColor = true;
-            this.btn_9.Click += new System.EventHandler(this.btn_9_Click);
+            this.btn_9.Click += new System.EventHandler(this.Btn_9_Click);
             // 
             // btn_10
             // 
@@ -1007,7 +1007,7 @@
             this.btn_10.TabIndex = 7;
             this.btn_10.Text = "?";
             this.btn_10.UseVisualStyleBackColor = true;
-            this.btn_10.Click += new System.EventHandler(this.btn_10_Click);
+            this.btn_10.Click += new System.EventHandler(this.Btn_10_Click);
             // 
             // btn_11
             // 
@@ -1017,7 +1017,7 @@
             this.btn_11.TabIndex = 8;
             this.btn_11.Text = "?";
             this.btn_11.UseVisualStyleBackColor = true;
-            this.btn_11.Click += new System.EventHandler(this.btn_11_Click);
+            this.btn_11.Click += new System.EventHandler(this.Btn_11_Click);
             // 
             // btn_12
             // 
@@ -1027,7 +1027,7 @@
             this.btn_12.TabIndex = 9;
             this.btn_12.Text = "?";
             this.btn_12.UseVisualStyleBackColor = true;
-            this.btn_12.Click += new System.EventHandler(this.btn_12_Click);
+            this.btn_12.Click += new System.EventHandler(this.Btn_12_Click);
             // 
             // btn_13
             // 
@@ -1037,7 +1037,7 @@
             this.btn_13.TabIndex = 10;
             this.btn_13.Text = "?";
             this.btn_13.UseVisualStyleBackColor = true;
-            this.btn_13.Click += new System.EventHandler(this.btn_13_Click);
+            this.btn_13.Click += new System.EventHandler(this.Btn_13_Click);
             // 
             // btn_14
             // 
@@ -1047,7 +1047,7 @@
             this.btn_14.TabIndex = 11;
             this.btn_14.Text = "?";
             this.btn_14.UseVisualStyleBackColor = true;
-            this.btn_14.Click += new System.EventHandler(this.btn_14_Click);
+            this.btn_14.Click += new System.EventHandler(this.Btn_14_Click);
             // 
             // btn_15
             // 
@@ -1057,7 +1057,7 @@
             this.btn_15.TabIndex = 12;
             this.btn_15.Text = "?";
             this.btn_15.UseVisualStyleBackColor = true;
-            this.btn_15.Click += new System.EventHandler(this.btn_15_Click);
+            this.btn_15.Click += new System.EventHandler(this.Btn_15_Click);
             // 
             // btn_limpar
             // 
@@ -1070,7 +1070,7 @@
             this.btn_limpar.TabIndex = 12;
             this.btn_limpar.Text = "LIMPAR CAIXAS DE TEXTO";
             this.btn_limpar.UseVisualStyleBackColor = false;
-            this.btn_limpar.Click += new System.EventHandler(this.btn_limpar_Click);
+            this.btn_limpar.Click += new System.EventHandler(this.Btn_limpar_Click);
             // 
             // Form1
             // 

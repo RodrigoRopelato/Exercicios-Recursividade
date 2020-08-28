@@ -18,7 +18,7 @@ namespace Exercícios_de_recursividade
         }
 
         #region exercicio 1
-        private void btn_exerc_1_Click(object sender, EventArgs e)
+        private void Btn_exerc_1_Click(object sender, EventArgs e)
         {
             int n = int.Parse(text_exerc_1.Text);
 
@@ -37,7 +37,7 @@ namespace Exercícios_de_recursividade
         }
         #endregion
         #region exercicio 2
-        private void btn_fibonacci_Click(object sender, EventArgs e)
+        private void Btn_fibonacci_Click(object sender, EventArgs e)
         {
             int n = int.Parse(text_exerc_2.Text);
 
@@ -57,7 +57,7 @@ namespace Exercícios_de_recursividade
         }
         #endregion
         #region exercicio 3
-        private void btn_exerc_3_Click(object sender, EventArgs e)
+        private void Btn_exerc_3_Click(object sender, EventArgs e)
         {
             string n = text_exerc_3.Text;
             char[] numeros = n.ToArray();
@@ -79,7 +79,7 @@ namespace Exercícios_de_recursividade
         }
         #endregion
         #region exercicio 4
-        private void btn_exerc_4_Click(object sender, EventArgs e)
+        private void Btn_exerc_4_Click(object sender, EventArgs e)
         {
             string elementos = text_exerc_4.Text;
             string[] listaElementos = elementos.Split(',');
@@ -104,7 +104,7 @@ namespace Exercícios_de_recursividade
         }
         #endregion
         #region exercicio 5
-        private void btn_exerc_5_Click(object sender, EventArgs e)
+        private void Btn_exerc_5_Click(object sender, EventArgs e)
         {
             int numero = int.Parse(text_exerc_5.Text);
 
@@ -121,7 +121,7 @@ namespace Exercícios_de_recursividade
         }
         #endregion
         #region exercicio 6
-        private void btn_exerc_6_Click(object sender, EventArgs e)
+        private void Btn_exerc_6_Click(object sender, EventArgs e)
         {
             int k = int.Parse(text1_exerc_6.Text);
             int n = int.Parse(text2_exerc_6.Text);
@@ -139,7 +139,7 @@ namespace Exercícios_de_recursividade
         }
         #endregion
         #region exercicio 7
-        private void btn_exerc_7_Click(object sender, EventArgs e)
+        private void Btn_exerc_7_Click(object sender, EventArgs e)
         {
             string elementos = text_exerc_7.Text;
             string[] listaElementos = elementos.Split(',');
@@ -163,7 +163,7 @@ namespace Exercícios_de_recursividade
         }
         #endregion
         #region exercicio 8
-        private void btn_exerc_8_Click(object sender, EventArgs e)
+        private void Btn_exerc_8_Click(object sender, EventArgs e)
         {
             int x = int.Parse(text_x_exerc_8.Text);
             int y = int.Parse(text_y_exerc_8.Text);
@@ -185,7 +185,7 @@ namespace Exercícios_de_recursividade
         }
         #endregion
         #region exercicio 9
-        private void btn_exerc_9_Click(object sender, EventArgs e)
+        private void Btn_exerc_9_Click(object sender, EventArgs e)
         {
             string numero = text_N_exerc_9.Text;
             char[] lista = numero.ToArray();
@@ -210,7 +210,7 @@ namespace Exercícios_de_recursividade
         }
         #endregion
         #region exercicio 10
-        private void btn_exerc_10_Click(object sender, EventArgs e)
+        private void Btn_exerc_10_Click(object sender, EventArgs e)
         {
             int N1 = int.Parse(text_N1_exerc_10.Text);
             int N2 = int.Parse(text_N2_exerc_10.Text);
@@ -222,7 +222,7 @@ namespace Exercícios_de_recursividade
         }
         #endregion
         #region exercicio 11
-        private void btn_exerc_11_Click(object sender, EventArgs e)
+        private void Btn_exerc_11_Click(object sender, EventArgs e)
         {
             string N = text_exerc_11.Text;
             int i = 0;
@@ -240,7 +240,7 @@ namespace Exercícios_de_recursividade
         }
         #endregion
         #region exercicio 12
-        private void btn_exerc_12_Click(object sender, EventArgs e)
+        private void Btn_exerc_12_Click(object sender, EventArgs e)
         {
             string N = text_exerc_12.Text;
             int i = int.Parse(N);
@@ -257,7 +257,7 @@ namespace Exercícios_de_recursividade
         }
         #endregion
         #region exercicio 13
-        private void btn_exerc_13_Click(object sender, EventArgs e)
+        private void Btn_exerc_13_Click(object sender, EventArgs e)
         {
             if (int.Parse(text_exerc_13.Text) % 2 == 0)
             {
@@ -281,7 +281,7 @@ namespace Exercícios_de_recursividade
         }
         #endregion
         #region exercicio 14
-        private void btn_exerc_14_Click(object sender, EventArgs e)
+        private void Btn_exerc_14_Click(object sender, EventArgs e)
         {
             if (int.Parse(text_exerc_14.Text) % 2 == 0)
             {
@@ -305,7 +305,7 @@ namespace Exercícios_de_recursividade
         }
         #endregion
         #region exercicio 15
-        private void btn_exerc_15_Click(object sender, EventArgs e)
+        private void Btn_exerc_15_Click(object sender, EventArgs e)
         {
             if (int.Parse(text_exerc_15.Text) % 2 != 0)
             {
@@ -332,7 +332,7 @@ namespace Exercícios_de_recursividade
         }
         #endregion
         #region metodo para gerar vetor numeros aleatórios
-        private void btn_gerarVetor_7_Click(object sender, EventArgs e)
+        private void Btn_gerarVetor_7_Click(object sender, EventArgs e)
         {
             text_exerc_7.Clear();
 
@@ -351,83 +351,83 @@ namespace Exercícios_de_recursividade
         }
         #endregion
         #region Botões perguntas
-        private void btn_1_Click(object sender, EventArgs e)
+        private void Btn_1_Click(object sender, EventArgs e)
         {
             MessageBox.Show(" Faça uma função recursiva que calcule e retorne o fatorial de um número inteiro N.", "Exercicio 1");
         }
 
-        private void btn_2_Click(object sender, EventArgs e)
+        private void Btn_2_Click(object sender, EventArgs e)
         {
             MessageBox.Show(" Faça uma função recursiva que calcule e retorne o N-ésimo termo da sequência Fibonacci.Alguns números desta sequência são: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89...", "Exercicio 2");
         }
 
-        private void btn_3_Click(object sender, EventArgs e)
+        private void Btn_3_Click(object sender, EventArgs e)
         {
             MessageBox.Show(" Faça uma função recursiva que permita inverter um número inteiro N. Ex: 123 - 321", "Exercicio 3");
         }
 
-        private void btn_4_Click(object sender, EventArgs e)
+        private void Btn_4_Click(object sender, EventArgs e)
         {
             MessageBox.Show(" Faça uma função recursiva que permita somar os elementos de um vetor de inteiros.", "Exercicio 4");
         }
 
-        private void btn_5_Click(object sender, EventArgs e)
+        private void Btn_5_Click(object sender, EventArgs e)
         {
             MessageBox.Show(" Crie uma função recursiva que receba um número inteiro positivo N e calcule o somatório dos números de 1 a N.", "Exercicio 5");
         }
 
-        private void btn_6_Click(object sender, EventArgs e)
+        private void Btn_6_Click(object sender, EventArgs e)
         {
             MessageBox.Show(" Crie um programa que contenha uma função recursiva que receba dois inteiros positivos k e n e calcule kn.Utilize apenas multiplicações.O programa principal deve solicitar ao usuário os valores de k e n e imprimir o resultado da chamada da função.", "Exercicio 6");
         }
 
-        private void btn_7_Click(object sender, EventArgs e)
+        private void Btn_7_Click(object sender, EventArgs e)
         {
             MessageBox.Show(" Crie um programa que receba um vetor de números reais com 100 elementos.Escreva uma função recursiva que inverta ordem dos elementos presentes no vetor.", "Exercicio 7");
         }
 
-        private void btn_8_Click(object sender, EventArgs e)
+        private void Btn_8_Click(object sender, EventArgs e)
         {
             MessageBox.Show(" O máximo divisor comum dos inteiros x e y é o maior inteiro que é divisível por x e y.Escreva uma função recursiva mdc que retorna o máximo divisor comum de x e y.O mdc de x e y é definido como segue: se y é igual a 0, então mdc(x, y) é x; caso contrário, mdc(x, y) é mdc(y, x% y), onde % é o operador resto.", "Exercicio 8");
         }
 
-        private void btn_9_Click(object sender, EventArgs e)
+        private void Btn_9_Click(object sender, EventArgs e)
         {
             MessageBox.Show(" Escreva uma função recursiva que determine quantas vezes um dígito K ocorre em um número natural N.Por exemplo, o dígito 2 ocorre 3 vezes em 762021192.", "Exercicio 9");
         }
 
-        private void btn_10_Click(object sender, EventArgs e)
+        private void Btn_10_Click(object sender, EventArgs e)
         {
             MessageBox.Show(" A multiplicação de dois números inteiros pode ser feita através de somas sucessivas.Proponha um algoritmo recursivo  que calcule a multiplicação de dois inteiros.", "Exercicio 10");
         }
 
-        private void btn_11_Click(object sender, EventArgs e)
+        private void Btn_11_Click(object sender, EventArgs e)
         {
             MessageBox.Show(" Faça uma função recursiva que receba um número inteiro positivo N e imprima todos os números naturais de 0 até N em ordem crescente. ", "Exercicio 11");
         }
 
-        private void btn_12_Click(object sender, EventArgs e)
+        private void Btn_12_Click(object sender, EventArgs e)
         {
             MessageBox.Show(" Faça uma função recursiva que receba um número inteiro positivo N e imprima todos os números naturais de 0 até N em ordem decrescente.", "Exercicio 12");
         }
 
-        private void btn_13_Click(object sender, EventArgs e)
+        private void Btn_13_Click(object sender, EventArgs e)
         {
             MessageBox.Show(" Faça uma função recursiva que receba um número inteiro positivo par N e imprima todos os números pares de 0 até N em ordem crescente.", "Exercicio 13");
         }
 
-        private void btn_14_Click(object sender, EventArgs e)
+        private void Btn_14_Click(object sender, EventArgs e)
         {
             MessageBox.Show(" Faça uma função recursiva que receba um número inteiro positivo par N e imprima todos os números pares de 0 até N em ordem decrescente. ", "Exercicio 14");
         }
 
-        private void btn_15_Click(object sender, EventArgs e)
+        private void Btn_15_Click(object sender, EventArgs e)
         {
             MessageBox.Show(" A função fatorial duplo é definida como o produto de todos os números naturais ímpares de 1 até algum número natural ímpar N. Assim, o fatorial duplo de 5 é 5!! = 1 * 3 * 5 = 15 Faça uma função recursiva que receba um número inteiro positivo impar N e retorne o fatorial duplo desse número.", "Exercicio 15");
         }
         #endregion
         #region limpar caixas de texto
-        private void btn_limpar_Click(object sender, EventArgs e)
+        private void Btn_limpar_Click(object sender, EventArgs e)
         {
             text_exerc_1.Clear();
             text_exerc_2.Clear();

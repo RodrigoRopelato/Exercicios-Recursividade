@@ -142,24 +142,21 @@ namespace Exercícios_de_recursividade
         private void Btn_exerc_7_Click(object sender, EventArgs e)
         {
             string elementos = text_exerc_7.Text;
-            string[] listaElementos = elementos.Split(',');
-            int[] elementosInt = new int[listaElementos.Length];
-            for (int i = 0; i < elementosInt.Length; i++)
-                elementosInt[i] = int.Parse(listaElementos[i]);
-
-            string vetorInvertido = InverterNumerosVetor(elementosInt.Length - 1, elementosInt);
+            string[] vetorString = elementos.Split(',');
+            
+            string vetorInvertido = InverterNumerosVetor(vetorString.Length - 1, vetorString);
 
             MessageBox.Show("vetor invertido é " + vetorInvertido, "Exercicio 7");
         }
 
         //metodo para inverter numeros
-        private string InverterNumerosVetor(int i, int[] n)
+        private string InverterNumerosVetor(int i, string[] n)
         {
             if (i <= 0)
-                return n[i].ToString();
+                return n[i];
 
 
-            return n[i].ToString() + ", " + InverterNumerosVetor(i - 1, n);
+            return n[i] + ", " + InverterNumerosVetor(i - 1, n);
         }
         #endregion
         #region exercicio 8
@@ -177,11 +174,12 @@ namespace Exercícios_de_recursividade
             
         }
         //metodo para calcular mdc de x y
-        private int CalculoMdc(int x, int y)
+        private int CalculoMdc(int x, int y) 
         {
-            if (y == 0)
-                return x;
-            return CalculoMdc(y, x % y);
+            if (y == 0) 
+                return x; 
+
+            return CalculoMdc(y, x % y); 
         }
         #endregion
         #region exercicio 9

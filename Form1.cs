@@ -146,7 +146,7 @@ namespace Exercícios_de_recursividade
             
             string vetorInvertido = InverterNumerosVetor(vetorString.Length - 1, vetorString);
 
-            MessageBox.Show("vetor invertido é " + vetorInvertido, "Exercicio 7");
+            MessageBox.Show("vetor invertido é \n" + vetorInvertido, "Exercicio 7");
         }
 
         //metodo para inverter numeros
@@ -361,67 +361,84 @@ namespace Exercícios_de_recursividade
 
         private void Btn_3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(" Faça uma função recursiva que permita inverter um número inteiro N. Ex: 123 - 321", "Exercicio 3");
+            MessageBox.Show(" Faça uma função recursiva que permita inverter um número inteiro N."
+                +" Ex: 123 - 321","Exercicio 3");
         }
 
         private void Btn_4_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(" Faça uma função recursiva que permita somar os elementos de um vetor de inteiros.", "Exercicio 4");
+            MessageBox.Show(" Faça uma função recursiva que permita somar os elementos de um vetor de inteiros."
+                + "\n\nObs: usar virgula para separar numeros", "Exercicio 4");
         }
 
         private void Btn_5_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(" Crie uma função recursiva que receba um número inteiro positivo N e calcule o somatório dos números de 1 a N.", "Exercicio 5");
+            MessageBox.Show(" Crie uma função recursiva que receba um número inteiro positivo N e"
+                + " calcule o somatório dos números de 1 a N.", "Exercicio 5");
         }
 
         private void Btn_6_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(" Crie um programa que contenha uma função recursiva que receba dois inteiros positivos k e n e calcule kn.Utilize apenas multiplicações.O programa principal deve solicitar ao usuário os valores de k e n e imprimir o resultado da chamada da função.", "Exercicio 6");
+            MessageBox.Show(" Crie um programa que contenha uma função recursiva que receba dois inteiros"
+                +" positivos k e n e calcule kn.Utilize apenas multiplicações.O programa principal deve solicitar "
+                +"ao usuário os valores de k e n e imprimir o resultado da chamada da função.", "Exercicio 6");
         }
 
         private void Btn_7_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(" Crie um programa que receba um vetor de números reais com 100 elementos.Escreva uma função recursiva que inverta ordem dos elementos presentes no vetor.", "Exercicio 7");
+            MessageBox.Show(" Crie um programa que receba um vetor de números reais com 100 elementos."
+                +"Escreva uma função recursiva que inverta ordem dos elementos presentes no vetor.", "Exercicio 7");
         }
 
         private void Btn_8_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(" O máximo divisor comum dos inteiros x e y é o maior inteiro que é divisível por x e y.Escreva uma função recursiva mdc que retorna o máximo divisor comum de x e y.O mdc de x e y é definido como segue: se y é igual a 0, então mdc(x, y) é x; caso contrário, mdc(x, y) é mdc(y, x% y), onde % é o operador resto.", "Exercicio 8");
+            MessageBox.Show(" O máximo divisor comum dos inteiros x e y é o maior inteiro que é divisível por x e y."
+                +"Escreva uma função recursiva mdc que retorna o máximo divisor comum de x e y.O mdc de x e y é "
+                +"definido como segue: se y é igual a 0, então mdc(x, y) é x; caso contrário, mdc(x, y) é mdc(y, x% y), onde % é o operador resto.", "Exercicio 8");
         }
 
         private void Btn_9_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(" Escreva uma função recursiva que determine quantas vezes um dígito K ocorre em um número natural N.Por exemplo, o dígito 2 ocorre 3 vezes em 762021192.", "Exercicio 9");
+            MessageBox.Show(" Escreva uma função recursiva que determine quantas vezes um dígito K ocorre em um"
+                +" número natural N.Por exemplo, o dígito 2 ocorre 3 vezes em 762021192.", "Exercicio 9");
         }
 
         private void Btn_10_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(" A multiplicação de dois números inteiros pode ser feita através de somas sucessivas.Proponha um algoritmo recursivo  que calcule a multiplicação de dois inteiros.", "Exercicio 10");
+            MessageBox.Show(" A multiplicação de dois números inteiros pode ser feita através de somas sucessivas."
+                +"Proponha um algoritmo recursivo  que calcule a multiplicação de dois inteiros.", "Exercicio 10");
         }
 
         private void Btn_11_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(" Faça uma função recursiva que receba um número inteiro positivo N e imprima todos os números naturais de 0 até N em ordem crescente. ", "Exercicio 11");
+            MessageBox.Show(" Faça uma função recursiva que receba um número inteiro positivo N e imprima todos "
+                +"os números naturais de 0 até N em ordem crescente. ", "Exercicio 11");
         }
 
         private void Btn_12_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(" Faça uma função recursiva que receba um número inteiro positivo N e imprima todos os números naturais de 0 até N em ordem decrescente.", "Exercicio 12");
+            MessageBox.Show(" Faça uma função recursiva que receba um número inteiro positivo N e imprima todos"
+                +" os números naturais de 0 até N em ordem decrescente.", "Exercicio 12");
         }
 
         private void Btn_13_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(" Faça uma função recursiva que receba um número inteiro positivo par N e imprima todos os números pares de 0 até N em ordem crescente.", "Exercicio 13");
+            MessageBox.Show(" Faça uma função recursiva que receba um número inteiro positivo par N e imprima todos"
+                +" os números pares de 0 até N em ordem crescente.", "Exercicio 13");
         }
 
         private void Btn_14_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(" Faça uma função recursiva que receba um número inteiro positivo par N e imprima todos os números pares de 0 até N em ordem decrescente. ", "Exercicio 14");
+            MessageBox.Show(" Faça uma função recursiva que receba um número inteiro positivo par N e imprima todos"
+                +" os números pares de 0 até N em ordem decrescente. ", "Exercicio 14");
         }
 
         private void Btn_15_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(" A função fatorial duplo é definida como o produto de todos os números naturais ímpares de 1 até algum número natural ímpar N. Assim, o fatorial duplo de 5 é 5!! = 1 * 3 * 5 = 15 Faça uma função recursiva que receba um número inteiro positivo impar N e retorne o fatorial duplo desse número.", "Exercicio 15");
+            MessageBox.Show(" A função fatorial duplo é definida como o produto de todos os números naturais ímpares"
+                +" de 1 até algum número natural ímpar N. Assim, o fatorial duplo de 5 é 5!! = 1 * 3 * 5 = 15 Faça "
+                +"uma função recursiva que receba um número inteiro positivo impar N e retorne o fatorial duplo desse"
+                +" número.", "Exercicio 15");
         }
         #endregion
         #region limpar caixas de texto

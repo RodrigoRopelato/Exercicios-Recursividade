@@ -20,40 +20,44 @@ namespace Exercícios_de_recursividade
         #region exercicio 1
         private void Btn_exerc_1_Click(object sender, EventArgs e)
         {
-            int n = int.Parse(text_exerc_1.Text);
+            int numero = int.Parse(text_exerc_1.Text);
 
-            int resultado = Fatorial(n);
+            int resultado = Fatorial(numero);
 
-            MessageBox.Show("O fatorial de " + n + " é " + resultado.ToString(), "Exercicio 1");
+            MessageBox.Show("O fatorial de " + numero + " é " + resultado.ToString(), "Exercicio 1");
         }
 
         //metodo calcular fatorial
-        private int Fatorial(int n)
+        private int Fatorial(int numero)
         {
-            if (n <= 0)
+            if (numero == 0)
                 return 1;
             else
-                return n * Fatorial(n - 1);
+                return numero * Fatorial(numero - 1);
         }
         #endregion
         #region exercicio 2
         private void Btn_fibonacci_Click(object sender, EventArgs e)
         {
-            int n = int.Parse(text_exerc_2.Text);
+            int numero = int.Parse(text_exerc_2.Text);
 
-            int resultado = Fibonacci(n);
+            int resultado = Fibonacci(numero);
             MessageBox.Show("O resultado da sequência Fibonacci é " + resultado.ToString(), "Exercicio 2");
         }
 
         //metodo calcular fibonacci
-        private int Fibonacci(int n)
+        private int Fibonacci(int numero)
         {
 
-            if (n <= 1)
+            if (numero == 1)
+                return 0;
+            if (numero == 2)
+                return 1;
+            if (numero == 3)
                 return 1;
 
             else
-                return Fibonacci(n - 1) + Fibonacci(n - 2);
+                return Fibonacci(numero - 1) + Fibonacci(numero - 2);
         }
         #endregion
         #region exercicio 3
@@ -89,7 +93,7 @@ namespace Exercícios_de_recursividade
                 elementosInt[i] = int.Parse(listaElementos[i]);
 
 
-            int resultado = SomarVetor(elementosInt.Length - 1, elementosInt);
+            int resultado = SomarVetor(0, elementosInt);
 
 
             MessageBox.Show("A soma do vetor é " + resultado, "Exercicio 4");
@@ -97,10 +101,10 @@ namespace Exercícios_de_recursividade
         //somar vetor
         private int SomarVetor(int i, int[] numeros)
         {
-            if (i <= 0)
-                return numeros[i];
+            if (i >= numeros.Length)
+                return 0;
 
-            return numeros[i] + SomarVetor(i - 1, numeros);
+            return numeros[i] + SomarVetor(i + 1, numeros);
         }
         #endregion
         #region exercicio 5
@@ -108,16 +112,16 @@ namespace Exercícios_de_recursividade
         {
             int numero = int.Parse(text_exerc_5.Text);
 
-            int resultado = SomaNumeros(numero);
+            int resultado = SomaNumeros(numero, 0);
 
             MessageBox.Show("A soma do numero 1 até " + numero + " é " + resultado, "Exercicio 5");
         }
         //metodo somar numero 1 a N
-        private int SomaNumeros(int numero)
+        private int SomaNumeros(int numero, int i)
         {
-            if (numero <= 1)
-                return 1;
-            return numero + SomaNumeros(numero - 1);
+            if (i == numero)
+                return numero;
+            return i + SomaNumeros(numero, i + 1);
         }
         #endregion
         #region exercicio 6
@@ -143,7 +147,7 @@ namespace Exercícios_de_recursividade
         {
             string elementos = text_exerc_7.Text;
             string[] vetorString = elementos.Split(',');
-            
+
             string vetorInvertido = InverterNumerosVetor(vetorString.Length - 1, vetorString);
 
             MessageBox.Show("vetor invertido é \n" + vetorInvertido, "Exercicio 7");
@@ -171,15 +175,15 @@ namespace Exercícios_de_recursividade
                 int resultado = CalculoMdc(x, y);
                 MessageBox.Show("O MDC de " + x + " e " + y + " é " + resultado, "Exercicio 8");
             }
-            
+
         }
         //metodo para calcular mdc de x y
-        private int CalculoMdc(int x, int y) 
+        private int CalculoMdc(int x, int y)
         {
-            if (y == 0) 
-                return x; 
+            if (y == 0)
+                return x;
 
-            return CalculoMdc(y, x % y); 
+            return CalculoMdc(y, x % y);
         }
         #endregion
         #region exercicio 9
@@ -190,7 +194,7 @@ namespace Exercícios_de_recursividade
             string k = text_k_exerc_9.Text;
             int rep = 0;
 
-            int resultado = ContarRepeticoes(lista.Length - 1, lista, k, rep);
+            int resultado = ContarRepeticoes(0, lista, k, rep);
 
 
             MessageBox.Show("O digito " + k + " repete " + resultado + " vezes ", "Exercicio 9");
@@ -198,13 +202,13 @@ namespace Exercícios_de_recursividade
         //metodo para contar repetições 
         private int ContarRepeticoes(int i, char[] lista, string k, int vezes)
         {
-            if (i == 0)
+            if (i == lista.Length)
                 return vezes;
 
             if (lista[i].ToString() == k)
                 vezes++;
 
-            return ContarRepeticoes(i - 1, lista, k, vezes);
+            return ContarRepeticoes(i + 1, lista, k, vezes);
         }
         #endregion
         #region exercicio 10
@@ -240,93 +244,89 @@ namespace Exercícios_de_recursividade
         #region exercicio 12
         private void Btn_exerc_12_Click(object sender, EventArgs e)
         {
-            string N = text_exerc_12.Text;
-            int i = int.Parse(N);
-            string resultado = ImprimeNumerosDec(N, i);
+            int numero = int.Parse(text_exerc_12.Text);
+            string resultado = ImprimeNumerosDec(numero);
 
-            MessageBox.Show("Numeros de" + N + " a 0" + "\n" + resultado, "Exercicio 12");
+            MessageBox.Show("Numeros de" + numero + " a 0" + "\n" + resultado, "Exercicio 12");
         }
         //metodo imprime numero 0 a N
-        private string ImprimeNumerosDec(string N, int i)
+        private string ImprimeNumerosDec(int n)
         {
-            if (i == 0)
+            if (n == 0)
                 return "0";
-            return i.ToString() + " - " + ImprimeNumerosDec(N, i - 1);
+            return n.ToString() + " - " + ImprimeNumerosDec(n - 1);
         }
         #endregion
         #region exercicio 13
         private void Btn_exerc_13_Click(object sender, EventArgs e)
         {
-            if (int.Parse(text_exerc_13.Text) % 2 == 0)
-            {
-                string N = text_exerc_13.Text;
-                int i = 0;
-                string resultado = ImprimeNumerosPares(N, i);
-                MessageBox.Show("Numeros pares de 0 a " + N + "\n" + resultado, "Exercicio 13");
-            }
-            else
-            {
-                MessageBox.Show("Insira um numero par", "ATENÇÃO!");
-            }
+            int numero = int.Parse(text_exerc_13.Text);
+            string resultado = ImprimeNumerosPares(numero, 0);
+            MessageBox.Show("Numeros pares de 0 a " + numero + "\n" + resultado, "Exercicio 13");
+
         }
         //metodo imprime numero 0 a N Pares
-        private string ImprimeNumerosPares(string N, int i)
+        private string ImprimeNumerosPares(int numero, int i)
         {
-            if (i == int.Parse(N))
-                return N;
+            bool ehPar = i % 2 == 0;
+            if (i == numero)
+                if (ehPar)
+                    return i.ToString();
+                else
+                    return "";
 
-            return i.ToString() + " - " + ImprimeNumerosPares(N, i + 2);
+            if (ehPar)
+                return i.ToString() + ", " + ImprimeNumerosPares(numero, i + 1);
+            else
+                return "" + ImprimeNumerosPares(numero, i + 1);
         }
         #endregion
         #region exercicio 14
         private void Btn_exerc_14_Click(object sender, EventArgs e)
         {
-            if (int.Parse(text_exerc_14.Text) % 2 == 0)
-            {
-                string N = text_exerc_14.Text;
-                int i = int.Parse(N);
-                string resultado = ImprimeNumerosParesDec(N, i);
-                MessageBox.Show("Numeros pares de" + N + " a 0" + "\n" + resultado, "Exercicio 14");
-            }
-            else
-            {
-                MessageBox.Show("Insira um numero par", "ATENÇÃO!");
-            }
-           
+
+
+            int numero = int.Parse(text_exerc_14.Text);
+            string resultado = ImprimeNumerosParesDec(numero, numero);
+            MessageBox.Show("Numeros pares de" + numero + " a 0" + "\n" + resultado, "Exercicio 14");
+
+
         }
         //metodo imprime numero Pares 0 a N
-        private string ImprimeNumerosParesDec(string N, int i)
+        private string ImprimeNumerosParesDec(int N, int i)
         {
+            bool ehPar = i % 2 == 0;
+
             if (i == 0)
-                return "0";
-            return i.ToString() + " - " + ImprimeNumerosParesDec(N, i - 2);
+                    return "0";
+
+            if (ehPar)
+                return i.ToString() + ", " + ImprimeNumerosParesDec(N, i - 1);
+            else
+                return "" + ImprimeNumerosParesDec(N, i - 1);
         }
         #endregion
         #region exercicio 15
         private void Btn_exerc_15_Click(object sender, EventArgs e)
         {
-            if (int.Parse(text_exerc_15.Text) % 2 != 0)
-            {
+           
                 int n = int.Parse(text_exerc_15.Text);
-
                 int resultado = FatorialDuplo(n);
                 MessageBox.Show("O fatorial duplo de " + n + " é  " + resultado, "Exercicio 15");
-            }
-            else
-            {
-                MessageBox.Show("Insira um numero impar", "ATENÇÃO!");
-            }
-
 
         }
 
         //metodo calcular fatorial duplo
         private int FatorialDuplo(int n)
         {
-            if (n == 1)
+            bool ehImpar = n % 2 != 0;
+
+            if (n == 0)
                 return 1;
+            if (ehImpar)
+                return n * FatorialDuplo(n - 1);
             else
-                return n * FatorialDuplo(n - 2);
+                return 1 * FatorialDuplo(n - 1);
         }
         #endregion
         #region metodo para gerar vetor numeros aleatórios
@@ -362,7 +362,7 @@ namespace Exercícios_de_recursividade
         private void Btn_3_Click(object sender, EventArgs e)
         {
             MessageBox.Show(" Faça uma função recursiva que permita inverter um número inteiro N."
-                +" Ex: 123 - 321","Exercicio 3");
+                + " Ex: 123 - 321", "Exercicio 3");
         }
 
         private void Btn_4_Click(object sender, EventArgs e)
@@ -380,65 +380,65 @@ namespace Exercícios_de_recursividade
         private void Btn_6_Click(object sender, EventArgs e)
         {
             MessageBox.Show(" Crie um programa que contenha uma função recursiva que receba dois inteiros"
-                +" positivos k e n e calcule kn.Utilize apenas multiplicações.O programa principal deve solicitar "
-                +"ao usuário os valores de k e n e imprimir o resultado da chamada da função.", "Exercicio 6");
+                + " positivos k e n e calcule kn.Utilize apenas multiplicações.O programa principal deve solicitar "
+                + "ao usuário os valores de k e n e imprimir o resultado da chamada da função.", "Exercicio 6");
         }
 
         private void Btn_7_Click(object sender, EventArgs e)
         {
             MessageBox.Show(" Crie um programa que receba um vetor de números reais com 100 elementos."
-                +"Escreva uma função recursiva que inverta ordem dos elementos presentes no vetor.", "Exercicio 7");
+                + "Escreva uma função recursiva que inverta ordem dos elementos presentes no vetor.", "Exercicio 7");
         }
 
         private void Btn_8_Click(object sender, EventArgs e)
         {
             MessageBox.Show(" O máximo divisor comum dos inteiros x e y é o maior inteiro que é divisível por x e y."
-                +"Escreva uma função recursiva mdc que retorna o máximo divisor comum de x e y.O mdc de x e y é "
-                +"definido como segue: se y é igual a 0, então mdc(x, y) é x; caso contrário, mdc(x, y) é mdc(y, x% y), onde % é o operador resto.", "Exercicio 8");
+                + "Escreva uma função recursiva mdc que retorna o máximo divisor comum de x e y.O mdc de x e y é "
+                + "definido como segue: se y é igual a 0, então mdc(x, y) é x; caso contrário, mdc(x, y) é mdc(y, x% y), onde % é o operador resto.", "Exercicio 8");
         }
 
         private void Btn_9_Click(object sender, EventArgs e)
         {
             MessageBox.Show(" Escreva uma função recursiva que determine quantas vezes um dígito K ocorre em um"
-                +" número natural N.Por exemplo, o dígito 2 ocorre 3 vezes em 762021192.", "Exercicio 9");
+                + " número natural N.Por exemplo, o dígito 2 ocorre 3 vezes em 762021192.", "Exercicio 9");
         }
 
         private void Btn_10_Click(object sender, EventArgs e)
         {
             MessageBox.Show(" A multiplicação de dois números inteiros pode ser feita através de somas sucessivas."
-                +"Proponha um algoritmo recursivo  que calcule a multiplicação de dois inteiros.", "Exercicio 10");
+                + "Proponha um algoritmo recursivo  que calcule a multiplicação de dois inteiros.", "Exercicio 10");
         }
 
         private void Btn_11_Click(object sender, EventArgs e)
         {
             MessageBox.Show(" Faça uma função recursiva que receba um número inteiro positivo N e imprima todos "
-                +"os números naturais de 0 até N em ordem crescente. ", "Exercicio 11");
+                + "os números naturais de 0 até N em ordem crescente. ", "Exercicio 11");
         }
 
         private void Btn_12_Click(object sender, EventArgs e)
         {
             MessageBox.Show(" Faça uma função recursiva que receba um número inteiro positivo N e imprima todos"
-                +" os números naturais de 0 até N em ordem decrescente.", "Exercicio 12");
+                + " os números naturais de 0 até N em ordem decrescente.", "Exercicio 12");
         }
 
         private void Btn_13_Click(object sender, EventArgs e)
         {
             MessageBox.Show(" Faça uma função recursiva que receba um número inteiro positivo par N e imprima todos"
-                +" os números pares de 0 até N em ordem crescente.", "Exercicio 13");
+                + " os números pares de 0 até N em ordem crescente.", "Exercicio 13");
         }
 
         private void Btn_14_Click(object sender, EventArgs e)
         {
             MessageBox.Show(" Faça uma função recursiva que receba um número inteiro positivo par N e imprima todos"
-                +" os números pares de 0 até N em ordem decrescente. ", "Exercicio 14");
+                + " os números pares de 0 até N em ordem decrescente. ", "Exercicio 14");
         }
 
         private void Btn_15_Click(object sender, EventArgs e)
         {
             MessageBox.Show(" A função fatorial duplo é definida como o produto de todos os números naturais ímpares"
-                +" de 1 até algum número natural ímpar N. Assim, o fatorial duplo de 5 é 5!! = 1 * 3 * 5 = 15 Faça "
-                +"uma função recursiva que receba um número inteiro positivo impar N e retorne o fatorial duplo desse"
-                +" número.", "Exercicio 15");
+                + " de 1 até algum número natural ímpar N. Assim, o fatorial duplo de 5 é 5!! = 1 * 3 * 5 = 15 Faça "
+                + "uma função recursiva que receba um número inteiro positivo impar N e retorne o fatorial duplo desse"
+                + " número.", "Exercicio 15");
         }
         #endregion
         #region limpar caixas de texto
